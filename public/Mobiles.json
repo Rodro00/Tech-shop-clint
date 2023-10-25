@@ -1,0 +1,44 @@
+[
+  {
+    "cover": "https://i.ibb.co/v1ZKWFQ/daniel-romero-Pdfq-LVSk-kg-unsplash.jpg",
+    "id": 1,
+    "name": "Galaxy A04",
+    "price": 59.99,
+    "brand": "Brand A"
+  },
+  {
+    "cover": "https://i.ibb.co/52Kv1yX/anh-nhat-Pd-ALQmf-Eqv-E-unsplash.jpg",
+    "id": 2,
+    "name": "Galaxy A",
+    "price": 69.99,
+    "brand": "Brand B"
+  },
+  {
+    "cover": "https://i.ibb.co/RYM3dpS/daniel-romero-b-R-r3f-Ju-vk-unsplash.jpg",
+    "id": 3,
+    "name": "Galaxy A14",
+    "price": 79.99,
+    "brand": "Brand C"
+  },
+  {
+    "cover": "https://i.ibb.co/KzQZnYR/67.webp",
+    "id": 4,
+    "name": "Galaxy Z4",
+    "price": 89.99,
+    "brand": "Brand D"
+  },
+  {
+    "cover": "https://i.ibb.co/cy3K35d/78.webp",
+    "id": 5,
+    "name": "Galaxy S40",
+    "price": 99.99,
+    "brand": "Brand E"
+  },
+  {
+    "cover": "https://i.ibb.co/4gk65Gh/6RwK9.png",
+    "id": 6,
+    "name": "Galaxy F45",
+    "price": 109.99,
+    "brand": "Brand F"
+  }
+]

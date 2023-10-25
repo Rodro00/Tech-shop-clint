@@ -14,13 +14,12 @@ const NavBar = () => {
 
   const links = <>
   <li><NavLink to="/">Home</NavLink></li>
-  <li><NavLink to="brand">Brand</NavLink></li>
-  <li><NavLink to="login">Login</NavLink></li>
-  <li><NavLink to="register">Register</NavLink></li>
+  <li><NavLink to="/addproduct">Add Product</NavLink></li>
+  <li><NavLink to="/mycart">My Cart</NavLink></li>
   </>
   
   return (
-    <div className="navbar bg-slate-300">
+    <div className="navbar bg-slate-300 mt-8">
     <div className="navbar-start">
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +29,9 @@ const NavBar = () => {
           {links}
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+      <div >
+        <h1 className="font-bold text-2xl">Tech Shop</h1>
+      </div>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">

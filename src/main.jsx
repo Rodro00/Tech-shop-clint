@@ -11,6 +11,13 @@ import Login from './Login-Register/Login';
 import Register from './Login-Register/Register';
 import ErrorPage from './ErrorPage';
 import AuthProvider from './AuthProvider';
+import AddProduct from './Login-Register/AddProduct';
+import SingleBrandData from './SingleBrandData/SingleBrandData';
+import OneCard from './SingleBrandData/OneCard';
+import Update from './Update/Update';
+import Mycart from './Mycart';
+import NewBanner from './Home/NewBanner';
+import PrivateRoute from './Routes/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +36,35 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path:'/addproduct',
+        element:<AddProduct></AddProduct>
+      },
+      {
+        path:'/products/:brand',
+        element:<PrivateRoute><SingleBrandData></SingleBrandData></PrivateRoute>,
+        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/product/${params.brand}`)
+      },
+      {
+        path:'/details/:id',
+        element:<OneCard></OneCard>,
+        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/details/${params.id}`)
+      },
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/details/${params.id}`)
+      },
+      {
+        path:'/mycart',
+        element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
+        loader:()=>fetch('https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/carts')
+      },
+      {
+        path:'/product/:brand',
+        element:<NewBanner></NewBanner>,
+        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/product/${params.brand}`)
       }
     ]
   },
