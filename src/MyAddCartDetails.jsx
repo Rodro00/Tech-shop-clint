@@ -18,7 +18,7 @@ const MyAddCartDetails = ({ item ,productCart,setProductCart}) => {
       if (result.isConfirmed) {
 
         console.log("delete confirm")
-        fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/delete/${_id}`, {
+        fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/delete/${_id}`, {
           method: 'DELETE'
         })
           .then(res => res.json())

@@ -19,7 +19,7 @@ const Update = () => {
 
     console.log(updateProduct)
 
-    fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/details/${_id}`,{
+    fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/details/${_id}`,{
       method: 'PUT',
       headers:{
         'content-type' : 'application/json'

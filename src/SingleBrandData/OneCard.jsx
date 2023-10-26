@@ -16,7 +16,7 @@ const OneCard = () => {
     const brand = formData.get("brand")
     const newAddCart = { name, photo, price, description,brand }
     console.log(newAddCart);
-    fetch('https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/carts',{
+    fetch('https://tech-shop-ax1justgo-rodros-projects.vercel.app/carts',{
       method: 'POST',
       headers:{
         'content-type' : 'application/json'

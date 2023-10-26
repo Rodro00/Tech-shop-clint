@@ -38,33 +38,33 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
-        path:'/addproduct',
-        element:<AddProduct></AddProduct>
+        path: '/addproduct',
+        element: <AddProduct></AddProduct>
       },
       {
-        path:'/products/:brand',
-        element:<PrivateRoute><SingleBrandData></SingleBrandData></PrivateRoute>,
-        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/product/${params.brand}`)
+        path: '/products/:brand',
+        element: <PrivateRoute><SingleBrandData></SingleBrandData></PrivateRoute>,
+        loader: ({ params }) => fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/product/${params.brand}`)
       },
       {
-        path:'/details/:id',
-        element:<OneCard></OneCard>,
-        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/details/${params.id}`)
+        path: '/details/:id',
+        element: <OneCard></OneCard>,
+        loader: ({ params }) => fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/details/${params.id}`)
       },
       {
-        path:'/update/:id',
-        element:<Update></Update>,
-        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/details/${params.id}`)
+        path: '/update/:id',
+        element: <Update></Update>,
+        loader: ({ params }) => fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/details/${params.id}`)
       },
       {
-        path:'/mycart',
-        element:<PrivateRoute><Mycart></Mycart></PrivateRoute>,
-        loader:()=>fetch('https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/carts')
+        path: '/mycart',
+        element: <PrivateRoute><Mycart></Mycart></PrivateRoute>,
+        loader: () => fetch('https://tech-shop-ax1justgo-rodros-projects.vercel.app/carts')
       },
       {
-        path:'/product/:brand',
-        element:<NewBanner></NewBanner>,
-        loader:({params})=>fetch(`https://tech-shop-rd6jjljbp-rodros-projects.vercel.app/product/${params.brand}`)
+        path: '/product/:brand',
+        element: <NewBanner></NewBanner>,
+        loader: ({ params }) => fetch(`https://tech-shop-ax1justgo-rodros-projects.vercel.app/product/${params.brand}`)
       }
     ]
   },
