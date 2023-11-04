@@ -1,5 +1,5 @@
 # React + Vite
-tech-shop live site link: https://tech-mobile-and-computer-shop.web.app/
+tech-shop live link: https://tech-mobile-and-computer-shop.web.app/
 
 
-Here is my website live site link
+This is my website live link
